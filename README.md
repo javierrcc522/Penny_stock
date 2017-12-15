@@ -5,7 +5,10 @@ application up and running.
 
 Things you may want to cover:
 
-* Ruby version
+* Found API for my website, url https://api.robinhood.com/fundamentals
+                            params symbols = MRNS all caps
+
+
 
 * System dependencies
 

@@ -12,16 +12,5 @@ Things you may want to cover:
 
 * _I will be using this api and more https://github.com/sanko/Robinhood, https://blog.quandl.com/api-for-stock-data ._
 
-*
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+![alt text](pic.png)

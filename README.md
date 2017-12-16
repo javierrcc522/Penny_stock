@@ -5,14 +5,14 @@ application up and running.
 
 Things you may want to cover:
 
-* Found API for my website, url https://api.robinhood.com/fundamentals
-                            params symbols = MRNS all caps
+* _Found API for my website, url https://api.robinhood.com/fundamentals
+                            params symbols = MRNS all caps_
 
 
 
-* System dependencies
+* _I will be using this api and more https://github.com/sanko/Robinhood, https://blog.quandl.com/api-for-stock-data ._
 
-* Configuration
+*
 
 * Database creation
 

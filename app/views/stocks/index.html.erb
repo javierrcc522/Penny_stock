@@ -1,9 +1,13 @@
 
-
-<%= form_tag("/stocks", method: "get") do %>
-   <%= label_tag("Search for:") %>
-   <%= text_field_tag(:ticker) %>
-   <%= submit_tag("Search") %>
- <% end %>
-
- <h1><%= @test %></h1>
+<div class="container-fluid">
+  <p><%= form_tag("/stocks", method: "get") do %>
+     <%= label_tag("Search for:") %>
+     <%= text_field_tag(:ticker) %>
+     <%= submit_tag("Search") %>
+   <% end %></p>
+   <% if @price && @detail%>
+   <h2><%= @price["symbol"] %></h2>
+   <h3><%= @price["ask_price"] %></h3>
+   <h3><%= @detail["results"].first["description"] %></h3>
+   <% end %>
+</div>

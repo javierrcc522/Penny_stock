@@ -1,8 +1,10 @@
 class StocksController < ApplicationController
   def index
-    stock_object = Stock.new()
+    stock = Stock.new()
     if params[:ticker]
-      @test = stock_object.api_call(params[:ticker])
+      @price = stock.get_price(params[:ticker])
+      @detail = stock.get_detail(params[:ticker])
     end
+
   end
 end

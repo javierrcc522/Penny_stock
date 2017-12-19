@@ -1,1 +1,9 @@
-<h1><%= @test %></h1>
+
+
+<%= form_tag("/stocks", method: "get") do %>
+   <%= label_tag("Search for:") %>
+   <%= text_field_tag(:ticker) %>
+   <%= submit_tag("Search") %>
+ <% end %>
+
+ <h1><%= @test %></h1>

@@ -3,11 +3,13 @@
   <p><%= form_tag("/stocks", method: "get") do %>
      <%= label_tag("Search for:") %>
      <%= text_field_tag(:ticker) %>
-     <%= submit_tag("Search") %>
+     <%= submit_tag"Search", class: 'button' %>
    <% end %></p>
-   <% if @price && @detail%>
-   <h2><%= @price["symbol"] %></h2>
-   <h3><%= @price["ask_price"] %></h3>
-   <h3><%= @detail["results"].first["description"] %></h3>
-   <% end %>
+   <div class="card">
+     <% if @price && @detail%>
+     <h4><%= @price["symbol"] %></h4>
+     <div id="odometer" class="odometer"><%= @price["ask_price"] %></div>
+     <p><%= @detail["results"].first["description"] %></p>
+     <% end %>
+   </div>
 </div>

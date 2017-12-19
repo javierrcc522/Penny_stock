@@ -23,3 +23,16 @@
    height: 60px;
    text-align: center;
  }
+
+  .card {
+    padding: 10px;
+  }
+  .card > h4 {
+    text-align: center;
+  }
+
+  #odometer{
+    color: #1AA276;
+    text-align: center;
+    font-size: 30px;
+  }

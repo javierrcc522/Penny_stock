@@ -23,12 +23,7 @@
       <p>52 Wk Low</p>
     </div>
     <div class="col-sm-6">
-      <div id="odometer" class="odometer">000</div>
-      <script>
-      setTimeout(function(){
-          odometer.innerHTML = "<%= @price['ask_price'] %>";
-      }, 1000);
-      </script>
+      <div id="odometer" class="odometer">0</div>
 
       <h4>$<%= @detail["results"].first["volume"] %></h4>
       <p>Volume</p>
@@ -49,3 +44,5 @@
     <% end %>
   </div>
 </div>
+
+<%= render 'odometer' %>

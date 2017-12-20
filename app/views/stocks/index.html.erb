@@ -1,15 +1,48 @@
 
-<div class="container-fluid">
-  <p><%= form_tag("/stocks", method: "get") do %>
-     <%= label_tag("Search for:") %>
-     <%= text_field_tag(:ticker) %>
-     <%= submit_tag"Search", class: 'button' %>
-   <% end %></p>
-   <div class="card">
-     <% if @price && @detail%>
-     <h4><%= @price["symbol"] %></h4>
-     <div id="odometer" class="odometer"><%= @price["ask_price"] %></div>
-     <p><%= @detail["results"].first["description"] %></p>
-     <% end %>
-   </div>
+<div class="container">
+  <p>
+    <%= form_tag("/stocks", method: "get") do %>
+    <%= label_tag("Search for:") %>
+    <%= text_field_tag(:ticker) %>
+    <%= submit_tag"Search", class: 'button' %>
+    <% end %>
+ </p>
+ <div class="row">
+    <% if @price && @detail%>
+    <div class="col-sm-6">
+      <h4><%= @price["symbol"] %></h4>
+      <h4>$<%= @detail["results"].first["open"] %></h4>
+      <p>Open</p>
+      <h4>$<%= @detail["results"].first["high"] %></h4>
+      <p>Today's High</p>
+      <h4>$<%= @detail["results"].first["low"] %></h4>
+      <p>Today's Low</p>
+      <h4>$<%= @detail["results"].first["high_52_weeks"] %></h4>
+      <p>52 Wk High</p>
+      <h4>$<%= @detail["results"].first["low_52_weeks"] %></h4>
+      <p>52 Wk Low</p>
+    </div>
+    <div class="col-sm-6">
+      <div id="odometer" class="odometer">000</div>
+
+      <h4>$<%= @detail["results"].first["volume"] %></h4>
+      <p>Volume</p>
+      <h4>$<%= @detail["results"].first["average_volume"] %></h4>
+      <p>Average Volume</p>
+      <h4>$<%= @detail["results"].first["market_cap"] %></h4>
+      <p>Market Cap</p>
+      <h4>$<%= @detail["results"].first["pe_ratio"] %></h4>
+      <p>P/e Ratio</p>
+      <h4>$<%= @detail["results"].first["dividend_yield"] %></h4>
+      <p>Div yield</p>
+    </div>
+    <div class="row" id="stock_html_desc">
+      <div class="col-md-12">
+        <p><%= @detail["results"].first["description"] %></p>
+      </div>
+    </div>
+    <% end %>
+  </div>
 </div>
+
+<%= render 'odometor'%>

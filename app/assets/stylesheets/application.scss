@@ -16,6 +16,10 @@
 
  @import "bootstrap";
 
+  .container{
+    text-align: center;
+  }
+
   .navbar-banner{
    background: #21ce99;
    color: #fff;
@@ -27,12 +31,12 @@
   .card {
     padding: 10px;
   }
-  .card > h4 {
-    text-align: center;
+
+  h4 {
+    color: #1AA276;
   }
 
   #odometer{
     color: #1AA276;
-    text-align: center;
     font-size: 30px;
   }

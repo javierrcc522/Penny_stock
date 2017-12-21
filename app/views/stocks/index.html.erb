@@ -6,7 +6,7 @@
     <%= text_field_tag(:ticker) %>
     <%= submit_tag"Search", class: 'button' %>
     <% end %>
- </p>
+ </p><br>
  <div class="row">
     <% if @price && @detail%>
     <div class="col-sm-6">
@@ -19,13 +19,12 @@
       <p>Today's Low</p>
       <h4>$<%= @detail["results"].first["high_52_weeks"] %></h4>
       <p>52 Wk High</p>
-      <h4>$<%= @detail["results"].first["low_52_weeks"] %></h4>
+      <h4>$<%=  @detail["results"].first["low_52_weeks"] %></h4>
       <p>52 Wk Low</p>
     </div>
     <div class="col-sm-6">
-      <div id="odometer" class="odometer">0</div>
-
-      <h4>$<%= @detail["results"].first["volume"] %></h4>
+      <h2>$<div id="odometer1" class="odometer">12</div></h2>
+      <h2>$<div id="odometer2" class="odometer">12345</div></h2>
       <p>Volume</p>
       <h4>$<%= @detail["results"].first["average_volume"] %></h4>
       <p>Average Volume</p>

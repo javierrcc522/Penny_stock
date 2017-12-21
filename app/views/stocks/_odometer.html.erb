@@ -1,5 +1,8 @@
+<% if @price && @detail%>
 <script>
 setTimeout(function(){
-    odometer.innerHTML = "<%= @price['ask_price'] %>";
-}, 1000);
+  odometer1.innerHTML = "<%= @price['last_trade_price'] %>";
+  odometer2.innerHTML = "<%= @detail['results'].first['volume'] %>";
+}, 3000);
 </script>
+<% end %>

@@ -25,18 +25,22 @@
    color: #fff;
    font-weight: 700;
    height: 60px;
-   text-align: center;
  }
 
   .card {
     padding: 10px;
   }
 
-  h4 {
+  h2, h4 {
     color: #1AA276;
   }
 
   #odometer{
     color: #1AA276;
     font-size: 30px;
+  }
+
+  .navbar-banner > h1 {
+    color: white;
+    margin-left: 40px;
   }

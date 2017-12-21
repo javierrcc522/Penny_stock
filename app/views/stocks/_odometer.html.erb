@@ -3,6 +3,9 @@
 setTimeout(function(){
   odometer1.innerHTML = "<%= @price['last_trade_price'] %>";
   odometer2.innerHTML = "<%= @detail['results'].first['volume'] %>";
-}, 3000);
+  odometer3.innerHTML = "<%= @detail['results'].first['average_volume'] %>";
+
+  odometer4.innerHTML = "<%= @detail['results'].first['market_cap'] %>";
+}),300;
 </script>
 <% end %>

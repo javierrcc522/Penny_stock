@@ -6,7 +6,7 @@ application up and running.
 Things you may want to cover:
 
 <div align="center">
-  <img align="center" src="https://raw.githubusercontent.com/javierrcc522/Penny_stock/master/app/images/vid.gif">
+  <img align="center" src="https://raw.githubusercontent.com/javierrcc522/Penny_stock/master/app/assets/images/vid.gif">
 </div>
 
 * _Found API for my website, url https://api.robinhood.com/fundamentals

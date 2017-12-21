@@ -31,8 +31,12 @@
     padding: 10px;
   }
 
-  h5 {
+  h3, h2 {
     color: #1AA276;
+  }
+
+  #odometerText{
+    font-weight: lighter;
   }
 
   #odometer{
@@ -58,15 +62,14 @@
     height: 33px;
   }
 
-  form > h2 {
+  form > h1 {
     line-height: 0.9;
     color: orange;
     font-weight: lighter;
   }
 
   img {
-  vertical-align: middle;
-  border-style: none;
-  height: 26px;
-  width: 26px;
+    height: 38px;
+    width: 38px;
+    margin: -5px;
   }

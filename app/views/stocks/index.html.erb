@@ -2,7 +2,7 @@
 <div class="container"><br>
   <form>
     <%= form_tag("/stocks", method: "get") do %>
-    <h2 id="line"><%= label_tag("Search for:") %></h2>
+    <h1 id="line"><%= label_tag("Search for:") %></h1>
     <%= text_field_tag(:ticker) %>
     <%= submit_tag"Search", class: 'button' %>
     <% end %>
@@ -10,30 +10,30 @@
  <div class="row">
     <% if @price && @detail%>
     <div class="col-sm-6">
-      <h5><%= @price["symbol"] %><%= image_tag "robin.png" %></h5><hr>
+      <h3 id="odometerText"><%= @price["symbol"] %><%= image_tag "robin.png" %></h3><hr>
       <p>Open</p>
-      <h5>$<div id="odometer7" class="odometer"></div></h5><hr>
+      <h2>$<div id="odometer7" class="odometer"></div></h2><hr>
       <p>Today's High</p>
-      <h5>$<div id="odometer8" class="odometer"></div></h5><hr>
+      <h2>$<div id="odometer8" class="odometer"></div></h2><hr>
       <p>Today's Low</p>
-      <h5>$<div id="odometer9" class="odometer"></div></h5><hr>
+      <h2>$<div id="odometer9" class="odometer"></div></h2><hr>
       <p>52 Wk High</p>
-      <h5>$<div id="odometer10" class="odometer"></div></h5><hr>
+      <h2>$<div id="odometer10" class="odometer"></div></h2><hr>
       <p>52 Wk Low</p>
-      <h5>$<div id="odometer11" class="odometer"></div></h5><hr>
+      <h2>$<div id="odometer11" class="odometer"></div></h2><hr>
     </div>
     <div class="col-sm-6">
-      <h5>$<div id="odometer1" class="odometer"></div></h5><hr>
+      <h2>$<div id="odometer1" class="odometer"></div></h2><hr>
       <p>Volume</p>
-      <h5>$<div id="odometer2" class="odometer"></div></h5><hr>
+      <h2>$<div id="odometer2" class="odometer"></div></h2><hr>
       <p>Average Volume</p>
-      <h5>$<div id="odometer3" class="odometer"></div></h5><hr>
+      <h2>$<div id="odometer3" class="odometer"></div></h2><hr>
       <p>Market Cap</p>
-      <h5>$<div id="odometer4" class="odometer"></div></h5><hr>
+      <h2>$<div id="odometer4" class="odometer"></div></h2><hr>
       <p>P/e Ratio</p>
-      <h5>0<%= @detail["results"].first["pe_ratio"] %></h5><hr>
+      <h2>0<%= @detail["results"].first["pe_ratio"] %></h2><hr>
       <p>Div yield</p>
-      <h5>%<%= @detail["results"].first["dividend_yield"] %></h5><hr>
+      <h2>%<%= @detail["results"].first["dividend_yield"] %></h2><hr>
     </div>
     <div class="row">
       <div class="col-md-12">

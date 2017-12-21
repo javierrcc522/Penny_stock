@@ -10,13 +10,13 @@
 
   FORMAT_MARK_HTML = '<span class="odometer-formatting-mark"></span>';
 
-  DIGIT_FORMAT = '(,ddddd).ddd';
+  DIGIT_FORMAT = '(,ddd).ddd';
 
   FORMAT_PARSER = /^\(?([^)]*)\)?(?:(.)(d+))?$/;
 
-  FRAMERATE = 30;
+  FRAMERATE = 10;
 
-  DURATION = 2000;
+  DURATION = 3000;
 
   COUNT_FRAMERATE = 20;
 

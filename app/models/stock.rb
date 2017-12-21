@@ -1,11 +1,18 @@
 class Stock
   def get_price(ticker)
-    response =  RestClient.get("https://api.robinhood.com/quotes/#{ticker}/")
+    x = get_name(ticker)['results'].first['symbol']
+    response =  RestClient.get("https://api.robinhood.com/quotes/#{x}/")
     JSON.parse(response)
   end
 
   def get_detail(ticker)
-    response =  RestClient.get("https://api.robinhood.com/fundamentals/?symbols=#{ticker}")
+    x = get_name(ticker)['results'].first['symbol']
+    response =  RestClient.get("https://api.robinhood.com/fundamentals/?symbols=#{x}")
+    JSON.parse(response)
+  end
+
+  def get_name(input)
+    response =  RestClient.get("https://api.robinhood.com/instruments/?query=#{input}\ ")
     JSON.parse(response)
   end
 end

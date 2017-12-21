@@ -1,12 +1,12 @@
 
-<div class="container">
-  <p>
+<div class="container"><br>
+  <form>
     <%= form_tag("/stocks", method: "get") do %>
-    <%= label_tag("Search for:") %>
+    <p><%= label_tag("Search for:") %></p>
     <%= text_field_tag(:ticker) %>
     <%= submit_tag"Search", class: 'button' %>
     <% end %>
-  </p><br>
+  </form><br>
  <div class="row">
     <% if @price && @detail%>
     <div class="col-sm-6">

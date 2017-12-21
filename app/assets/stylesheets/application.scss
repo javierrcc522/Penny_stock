@@ -46,7 +46,15 @@
   }
 
   .button {
+    border: none;
     border-radius: 3px;
     color: white;
     background-color: #21ce99;
+    height: 100%;
+  }
+
+  form {
+    display: flex;
+    justify-content: center;
+    height: 33px;
   }

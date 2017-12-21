@@ -10,8 +10,8 @@
 
   <body>
     <nav class="navbar-banner">
-      <% if @price %>
-      <h1><%= @price["symbol"] %></h1>
+      <% if @input %>
+      <h1><%= @input['results'].first["name"] %></h1>
       <% end %>
     </nav>
     <%= yield %>

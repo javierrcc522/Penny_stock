@@ -31,7 +31,7 @@
     padding: 10px;
   }
 
-  h2 {
+  h5 {
     color: #1AA276;
   }
 
@@ -46,15 +46,27 @@
   }
 
   .button {
-    border: none;
-    border-radius: 3px;
-    color: white;
-    background-color: #21ce99;
+    border-radius: 4px;
+    color: orange;
     height: 100%;
+    font-weight: lighter;
   }
 
   form {
     display: flex;
     justify-content: center;
     height: 33px;
+  }
+
+  form > h2 {
+    line-height: 0.9;
+    color: orange;
+    font-weight: lighter;
+  }
+
+  img {
+  vertical-align: middle;
+  border-style: none;
+  height: 26px;
+  width: 26px;
   }

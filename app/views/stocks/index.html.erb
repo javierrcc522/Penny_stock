@@ -6,36 +6,36 @@
     <%= text_field_tag(:ticker) %>
     <%= submit_tag"Search", class: 'button' %>
     <% end %>
- </p><br>
+  </p><br>
  <div class="row">
     <% if @price && @detail%>
     <div class="col-sm-6">
-      <h4><%= @price["symbol"] %></h4>
-      <h4>$<%= @detail["results"].first["open"] %></h4>
+      <h2><%= @price["symbol"] %></h2><hr>
       <p>Open</p>
-      <h4>$<%= @detail["results"].first["high"] %></h4>
+      <h2>$<div id="odometer7" class="odometer"></div></h2><hr>
       <p>Today's High</p>
-      <h4>$<%= @detail["results"].first["low"] %></h4>
+      <h2>$<div id="odometer8" class="odometer"></div></h2><hr>
       <p>Today's Low</p>
-      <h4>$<%= @detail["results"].first["high_52_weeks"] %></h4>
+      <h2>$<div id="odometer9" class="odometer"></div></h2><hr>
       <p>52 Wk High</p>
-      <h4>$<%=  @detail["results"].first["low_52_weeks"] %></h4>
+      <h2>$<div id="odometer10" class="odometer"></div></h2><hr>
       <p>52 Wk Low</p>
+      <h2>$<div id="odometer11" class="odometer"></div></h2><hr>
     </div>
     <div class="col-sm-6">
-      <h2>$<div id="odometer1" class="odometer"></div></h2>
-      <h2>$<div id="odometer2" class="odometer"></div></h2>
+      <h2>$<div id="odometer1" class="odometer"></div></h2><hr>
       <p>Volume</p>
-      <h2>$<div id="odometer3" class="odometer"></div></h2>
+      <h2>$<div id="odometer2" class="odometer"></div></h2><hr>
       <p>Average Volume</p>
-      <h2>$<div id="odometer4" class="odometer"></div></h2>
+      <h2>$<div id="odometer3" class="odometer"></div></h2><hr>
       <p>Market Cap</p>
-      <h4>$<%= @detail["results"].first["pe_ratio"] %></h4>
+      <h2>$<div id="odometer4" class="odometer"></div></h2><hr>
       <p>P/e Ratio</p>
-      <h4>$<%= @detail["results"].first["dividend_yield"] %></h4>
+      <h2>$<%= @detail["results"].first["pe_ratio"] %></h2><hr>
       <p>Div yield</p>
+      <h2>$<%= @detail["results"].first["dividend_yield"] %></h2><hr>
     </div>
-    <div class="row" id="stock_html_desc">
+    <div class="row">
       <div class="col-md-12">
         <p><%= @detail["results"].first["description"] %></p>
       </div>

@@ -4,8 +4,16 @@ setTimeout(function(){
   odometer1.innerHTML = "<%= @price['last_trade_price'] %>";
   odometer2.innerHTML = "<%= @detail['results'].first['volume'] %>";
   odometer3.innerHTML = "<%= @detail['results'].first['average_volume'] %>";
-
   odometer4.innerHTML = "<%= @detail['results'].first['market_cap'] %>";
+
+
+  odometer7.innerHTML = "<%= @detail['results'].first['open'] %>";
+  odometer8.innerHTML = "<%= @detail['results'].first['high'] %>";
+  odometer9.innerHTML = "<%= @detail['results'].first['low'] %>";
+
+  odometer10.innerHTML = "<%= @detail['results'].first['high_52_weeks'] %>";
+
+  odometer11.innerHTML = "<%= @detail['results'].first['low_52_weeks'] %>";
 }),300;
 </script>
 <% end %>

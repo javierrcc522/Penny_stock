@@ -31,7 +31,7 @@
     padding: 10px;
   }
 
-  h2, h4 {
+  h2 {
     color: #1AA276;
   }
 
@@ -43,4 +43,10 @@
   .navbar-banner > h1 {
     color: white;
     margin-left: 40px;
+  }
+
+  .button {
+    border-radius: 3px;
+    color: white;
+    background-color: #21ce99;
   }

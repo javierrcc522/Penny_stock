@@ -22,6 +22,7 @@ _Run the following commands in Terminal:_
 
 ## Known Bugs
 * _If the user types random letters that don't exit in the api call it will through error._
+* _make sure postgres is running in your machine if not run $ postgres._
 
 ## Support and contact details
 _If you have questions, comments, or concerns, please contact [Javi](javierrcc522@gmail.com)._
